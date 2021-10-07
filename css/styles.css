@@ -1,7 +1,16 @@
 body {
   font-family: Roboto, sans-serif;
-  font-style: normal;
+  font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
+:root {
+  --black-color: #212121;
+  --blue-color: #2196f3;
+  --grey-color: #757575;
+  --white-color: #ffffff;
+  --bgc-black-color: #2f303a;
+  }
 .logo-link {
   text-decoration: none;
 }
@@ -9,18 +18,14 @@ body {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+    color: var(--blue-color);
 }
 .logo-studio {
   text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--black-color);
 }
 .nav-spisok {
 list-style: none;
@@ -29,50 +34,44 @@ list-style: none;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--black-color);
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #2196f3;
+  color: var(--blue-color);
 }
 .header-contact {
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--grey-color);
 }
 .header-contact:hover,
 .header-contact:focus {
-  color: #2196f3;
+  color: var(--blue-color);
 }
 .section-hero {
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-  background-color: #2f303a;
+  background-color: var(--bgc-black-color);
 }
 .hero {
-  background-color: #2f303a;
+  background-color: var(--bgc-black-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .hero-button {
-  background: #2196F3;
+  background: var(--blue-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .osobennosti-spisok {
   list-style: none;
@@ -80,25 +79,20 @@ list-style: none;
 
 .osobennosti {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--black-color);
 }
 .osobennosti-opisanie {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--grey-color);
 }
 .zagolovok {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--black-color);
 }
 .spisok-rabot {
   list-style: none;
@@ -109,44 +103,29 @@ list-style: none;
 .team {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--black-color);
 }
 .team-spec {
   font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--grey-color);
 }
 .podval {
-  position: absolute;
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  background-color: #2f303a;
+    background-color: var(--bgc-black-color);
 }
 .podval-logo {
   text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .podval-addresss {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .podval-contact {
-  font-weight: 40;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .spisok-rabot {
@@ -157,28 +136,25 @@ list-style: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--black-color);
 }
 .filter:hover,
 .filter:focus {
-  background-color: #2196f3;
+  background-color: var(--blue-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .nazvanie-proekta {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--black-color);
 }
 .opisanie-proekta {
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--grey-color);
 }
