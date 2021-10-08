@@ -1,61 +1,67 @@
-body {
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
 :root {
   --black-color: #212121;
   --blue-color: #2196f3;
   --grey-color: #757575;
   --white-color: #ffffff;
   --bgc-black-color: #2f303a;
-  }
-.logo-link {
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.nav-link,
+.footer-link {
   text-decoration: none;
 }
-.logo-web {
+.nav-logo-web,
+.footer-logo-web {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
-.logo-studio {
+.nav-logo-studio {
   text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   color: var(--black-color);
 }
-.nav-spisok {
-list-style: none;
+.nav-list,
+.contact-list {
+  list-style: none;
 }
-.nav-link {
+.nav-list-link {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--black-color);
 }
-.nav-link:hover,
-.nav-link:focus {
+.nav-list-link:hover,
+.nav-list-link:focus {
   color: var(--blue-color);
 }
-.header-contact {
+.current {
+  color: var(--blue-color);
+}
+.contact-link {
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--grey-color);
 }
-.header-contact:hover,
-.header-contact:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--blue-color);
 }
-.section-hero {
+.hero {
   background-color: var(--bgc-black-color);
 }
-.hero {
+.hero-title {
   background-color: var(--bgc-black-color);
   font-weight: 900;
   font-size: 44px;
@@ -66,6 +72,7 @@ list-style: none;
   color: var(--white-color);
 }
 .hero-button {
+  cursor: pointer;
   background: var(--blue-color);
   font-weight: 700;
   font-size: 16px;
@@ -73,87 +80,104 @@ list-style: none;
   letter-spacing: 0.06em;
   color: var(--white-color);
 }
-.osobennosti-spisok {
+.features-title {
+  visibility: hidden;
+}
+.features-item {
   list-style: none;
 }
 
-.osobennosti {
+.features-item-title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--black-color);
 }
-.osobennosti-opisanie {
+.feateres-text {
   line-height: 1.71;
   color: var(--grey-color);
 }
-.zagolovok {
+.works-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--black-color);
 }
-.spisok-rabot {
+.works-list,
+.teams-list {
   list-style: none;
 }
-.spisok-team {
-  list-style: none;
-}
-.team {
+.team-item-title {
   font-weight: 500;
   font-size: 16px;
   color: var(--black-color);
 }
-.team-spec {
+.team-text {
   font-size: 16px;
   color: var(--grey-color);
 }
-.podval {
-    background-color: var(--bgc-black-color);
+.footer {
+  background-color: var(--bgc-black-color);
 }
-.podval-logo {
+.footer-logo {
   text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   color: var(--white-color);
 }
-.podval-addresss {
+.address {
   font-weight: 400;
   line-height: 1.71;
   color: var(--white-color);
 }
-.podval-contact {
+.address-list {
+  list-style: none;
+}
+.address-text {
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.71;
+  color: var(--white-color);
+}
+.address-contact {
+  font-style: normal;
+  text-decoration: none;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
-.spisok-rabot {
+.project-title {
+  visibility: hidden;
+}
+.filter-list,
+.project-list {
   list-style: none;
 }
-.filter {
+.filter-button {
+  cursor: pointer;
   background-color: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   color: var(--black-color);
 }
-.filter:hover,
-.filter:focus {
+.filter-button:hover,
+.filter-button:focus {
   background-color: var(--blue-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   color: var(--white-color);
 }
-.nazvanie-proekta {
+.project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--black-color);
 }
-.opisanie-proekta {
+.project-text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--grey-color);
