@@ -1,9 +1,3 @@
-body {
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
 :root {
   --black-color: #212121;
   --blue-color: #2196f3;
@@ -11,7 +5,13 @@ body {
   --white-color: #ffffff;
   --bgc-black-color: #2f303a;
   }
-.logo-link {
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  }
+.list-link {
   text-decoration: none;
 }
 .logo-web {
@@ -27,35 +27,38 @@ body {
   font-size: 26px;
   color: var(--black-color);
 }
-.nav-spisok {
+.nav-list {
 list-style: none;
 }
-.nav-link {
+.list-link {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--black-color);
 }
-.nav-link:hover,
-.nav-link:focus {
+.nav-contact {
+  list-style: none;
+  }
+.list-link:hover,
+.list-link:focus, {
   color: var(--blue-color);
 }
-.header-contact {
+.item-contact {
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--grey-color);
 }
-.header-contact:hover,
-.header-contact:focus {
+.item-contact:hover,
+.item-contact:focus {
   color: var(--blue-color);
 }
-.section-hero {
+.hero {
   background-color: var(--bgc-black-color);
 }
-.hero {
+.title-hero {
   background-color: var(--bgc-black-color);
   font-weight: 900;
   font-size: 44px;
@@ -65,7 +68,7 @@ list-style: none;
   text-transform: uppercase;
   color: var(--white-color);
 }
-.hero-button {
+.button-hero {
   background: var(--blue-color);
   font-weight: 700;
   font-size: 16px;
@@ -73,62 +76,62 @@ list-style: none;
   letter-spacing: 0.06em;
   color: var(--white-color);
 }
-.osobennosti-spisok {
+.list-features {
   list-style: none;
 }
 
-.osobennosti {
+.item-features {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--black-color);
 }
-.osobennosti-opisanie {
+.text-features {
   line-height: 1.71;
   color: var(--grey-color);
 }
-.zagolovok {
+.works {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--black-color);
 }
-.spisok-rabot {
+.list-works {
   list-style: none;
 }
-.spisok-team {
+.item-team {
   list-style: none;
 }
-.team {
+.title-team {
   font-weight: 500;
   font-size: 16px;
   color: var(--black-color);
 }
-.team-spec {
+.text-team {
   font-size: 16px;
   color: var(--grey-color);
 }
-.podval {
+.footer {
     background-color: var(--bgc-black-color);
 }
-.podval-logo {
+.footer-logo {
   text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   color: var(--white-color);
 }
-.podval-addresss {
+.footer-address {
   font-weight: 400;
   line-height: 1.71;
   color: var(--white-color);
 }
-.podval-contact {
+.footer-contact {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
-.spisok-rabot {
+.list-works {
   list-style: none;
 }
 .filter {
@@ -139,7 +142,8 @@ list-style: none;
   color: var(--black-color);
 }
 .filter:hover,
-.filter:focus {
+.filter:focus,
+.filter:current {
   background-color: var(--blue-color);
   font-weight: 500;
   font-size: 16px;
