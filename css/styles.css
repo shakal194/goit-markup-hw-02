@@ -1,6 +1,7 @@
 :root {
   --black-color: #212121;
   --blue-color: #2196f3;
+  --blue-color-hero-btn: #188ce8;
   --grey-color: #757575;
   --white-color: #ffffff;
   --bgc-black-color: #2f303a;
@@ -73,12 +74,16 @@ body {
 }
 .hero-button {
   cursor: pointer;
-  background: var(--blue-color);
+  background-color: var(--blue-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--white-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--blue-color-hero-btn);
 }
 .features-title {
   visibility: hidden;
@@ -93,7 +98,7 @@ body {
   text-transform: uppercase;
   color: var(--black-color);
 }
-.feateres-text {
+.features-text {
   line-height: 1.71;
   color: var(--grey-color);
 }
@@ -147,7 +152,7 @@ body {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
-.project-title {
+.project-main-title {
   visibility: hidden;
 }
 .filter-list,
