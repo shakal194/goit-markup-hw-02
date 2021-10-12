@@ -1,64 +1,68 @@
 :root {
   --black-color: #212121;
   --blue-color: #2196f3;
+  --blue-color-hero-btn: #188ce8;
   --grey-color: #757575;
   --white-color: #ffffff;
   --bgc-black-color: #2f303a;
-  }
+}
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  }
-.list-link {
+}
+.nav-link,
+.footer-link {
   text-decoration: none;
 }
-.logo-web {
+.nav-logo-web,
+.footer-logo-web {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
-.logo-studio {
+.nav-logo-studio {
   text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   color: var(--black-color);
 }
-.nav-list {
-list-style: none;
+.nav-list,
+.contact-list {
+  list-style: none;
 }
-.list-link {
+.nav-list-link {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--black-color);
 }
-.nav-contact {
-  list-style: none;
-  }
-.list-link:hover,
-.list-link:focus, {
+.nav-list-link:hover,
+.nav-list-link:focus {
   color: var(--blue-color);
 }
-.item-contact {
+.current {
+  color: var(--blue-color);
+}
+.contact-link {
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--grey-color);
 }
-.item-contact:hover,
-.item-contact:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--blue-color);
 }
 .hero {
   background-color: var(--bgc-black-color);
 }
-.title-hero {
+.hero-title {
   background-color: var(--bgc-black-color);
   font-weight: 900;
   font-size: 44px;
@@ -68,52 +72,58 @@ list-style: none;
   text-transform: uppercase;
   color: var(--white-color);
 }
-.button-hero {
-  background: var(--blue-color);
+.hero-button {
+  cursor: pointer;
+  background-color: var(--blue-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--white-color);
 }
-.list-features {
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--blue-color-hero-btn);
+}
+.features-title {
+  visibility: hidden;
+}
+.features-item {
   list-style: none;
 }
 
-.item-features {
+.features-item-title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--black-color);
 }
-.text-features {
+.features-text {
   line-height: 1.71;
   color: var(--grey-color);
 }
-.works {
+.works-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--black-color);
 }
-.list-works {
+.works-list,
+.teams-list {
   list-style: none;
 }
-.item-team {
-  list-style: none;
-}
-.title-team {
+.team-item-title {
   font-weight: 500;
   font-size: 16px;
   color: var(--black-color);
 }
-.text-team {
+.team-text {
   font-size: 16px;
   color: var(--grey-color);
 }
 .footer {
-    background-color: var(--bgc-black-color);
+  background-color: var(--bgc-black-color);
 }
 .footer-logo {
   text-decoration: none;
@@ -122,42 +132,57 @@ list-style: none;
   font-size: 26px;
   color: var(--white-color);
 }
-.footer-address {
+.address {
   font-weight: 400;
   line-height: 1.71;
   color: var(--white-color);
 }
-.footer-contact {
+.address-list {
+  list-style: none;
+}
+.address-text {
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.71;
+  color: var(--white-color);
+}
+.address-contact {
+  font-style: normal;
+  text-decoration: none;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
-.list-works {
+.project-main-title {
+  visibility: hidden;
+}
+.filter-list,
+.project-list {
   list-style: none;
 }
-.filter {
+.filter-button {
+  cursor: pointer;
   background-color: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   color: var(--black-color);
 }
-.filter:hover,
-.filter:focus,
-.filter:current {
+.filter-button:hover,
+.filter-button:focus {
   background-color: var(--blue-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   color: var(--white-color);
 }
-.nazvanie-proekta {
+.project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--black-color);
 }
-.opisanie-proekta {
+.project-text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--grey-color);
