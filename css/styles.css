@@ -12,11 +12,13 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.nav-link,
-.footer-link {
+.list {
+  list-style: none;
+}
+.link {
   text-decoration: none;
 }
-.nav-logo-web,
+.logo-web,
 .footer-logo-web {
   font-family: Raleway;
   font-weight: 700;
@@ -24,32 +26,25 @@ body {
   color: var(--blue-color);
 }
 .nav-logo-studio {
-  text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   color: var(--black-color);
 }
-.nav-list,
-.contact-list {
-  list-style: none;
-}
-.nav-list-link {
-  text-decoration: none;
+.nav-link {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--black-color);
 }
-.nav-list-link:hover,
-.nav-list-link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--blue-color);
 }
 .current {
   color: var(--blue-color);
 }
 .contact-link {
-  text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -85,13 +80,9 @@ body {
 .hero-button:focus {
   background-color: var(--blue-color-hero-btn);
 }
-.features-title {
+.features-title1 {
   visibility: hidden;
 }
-.features-item {
-  list-style: none;
-}
-
 .features-item-title {
   font-weight: 700;
   line-height: 1.14;
@@ -109,10 +100,6 @@ body {
   text-align: center;
   color: var(--black-color);
 }
-.works-list,
-.teams-list {
-  list-style: none;
-}
 .team-item-title {
   font-weight: 500;
   font-size: 16px;
@@ -126,7 +113,6 @@ body {
   background-color: var(--bgc-black-color);
 }
 .footer-logo {
-  text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -137,28 +123,21 @@ body {
   line-height: 1.71;
   color: var(--white-color);
 }
-.address-list {
-  list-style: none;
-}
+
 .address-text {
   font-style: normal;
-  text-decoration: none;
   line-height: 1.71;
   color: var(--white-color);
 }
 .address-contact {
   font-style: normal;
-  text-decoration: none;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
 .project-main-title {
   visibility: hidden;
 }
-.filter-list,
-.project-list {
-  list-style: none;
-}
+
 .filter-button {
   cursor: pointer;
   background-color: #f5f4fa;
